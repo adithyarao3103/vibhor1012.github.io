@@ -155,15 +155,15 @@ body {
   padding-left: 30px;
   padding-top: 80px;
 }
-.txt > button {
-  height: 40px;
-  width: 200px;
+.txt > a {
+  padding: 12px 25px 12px 25px;
   border: 2px solid green;
+  text-decoration: none;
   background-color: whitesmoke;
   border-radius: 5px;
   color: green;
 }
-.txt > button:hover {
+.txt > a:hover {
   background-color: green;
   border: 2px solid whitesmoke;
   color: whitesmoke;
