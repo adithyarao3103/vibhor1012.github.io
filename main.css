@@ -183,7 +183,7 @@ body {
 }
 
 .skills {
-  background: url("skillp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("skill7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
@@ -199,7 +199,7 @@ body {
   letter-spacing: 2;
   margin-bottom: 0px;
   padding-top: 1vh;
-  color: black;
+  color: white;
 }
 .skillinfo {
    display: grid;
@@ -215,11 +215,12 @@ display: flex;
 
 .rb-container {
   font-family: "PT Sans", sans-serif;
-  margin: auto;
-  background: white;
+  position: relative;
+  height: 63vh;
+  width: 37.4625vw;
+  background: transparent;
   text-align: left;
 }
-
 .rb-container ul.rb {
   margin: 2.5em 0em;
   padding: 0;
@@ -230,8 +231,8 @@ display: flex;
   list-style: none;
   margin: auto;
   margin-left: 6em;
-  border-left: 1px dashed black;
-  padding: 0 0 50px 30px;
+  border-left: 1px dashed white;
+  padding: 0 0 25px 30px;
   position: relative;
 }
 
@@ -247,34 +248,34 @@ display: flex;
   height: 20px;
   width: 20px;
   content: " ";
-  border: 8px solid rgba(0, 0, 0, 1);
+  border: 8px solid white;
   border-radius: 500%;
   background: #50d890;
 }
 ul.rb li .timestamp {
-  color: rgba(0, 0, 0, 1.0);
+  color: #50d890;
   position: relative;
   font-size: 16px;
   font-weight: bold;
 }
 
 .item-title {
-  color: rgba(0, 0, 0, 1);
+  color: white;
 }
 
 
 .skillclmn {
   margin-top: 0vh;
   margin-bottom: 7vh;
-  background-color: black;
+  background: white;
 }
 
 .skillbox {
   margin: 0px;
   align-content: space-between;
   font-family: Montserrat;
+  background: transparent;
   color: black;
-  border-radius: 0px 15px 15px 0px;
   height: 63vh;
 }
 .skilltray {
@@ -288,7 +289,7 @@ ul.rb li .timestamp {
 .skillbarfull {
   width: 65%;
   height: :50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: whitesmoke;
   margin-left: 50px;
   border-radius: 30px;
   justify-content: left;
@@ -299,13 +300,13 @@ ul.rb li .timestamp {
   padding-right: 10px;
   float: left;
   color: white;
-  background-color: #6c63ff;
+  background-color: blue;
   border-radius: 30px;
 }
 .skilltxt {
   width: 20%;
-  color: black;
-  text-align: left;
+  color: white;
+  text-align: right;
 }
 
 .project {
