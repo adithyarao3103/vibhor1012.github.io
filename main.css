@@ -122,45 +122,45 @@ body {
 }
 .main {
   background: white;
-  display: flex;
   height: 100vh;
   flex-direction: column;
-  background-image: url("pencil3.jpeg");
+  background-image: url("pencil.jpg");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
-  background-size: 100vw 120vh;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .info {
-   display: grid;
-   grid-template-columns: 0.48fr 0.001fr 0.48fr;
-    width: 700px;
-    min-height: 100vh;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
 }
 .imag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  flex: 50%;
   width: 100%;
 }
-.clmn {
-  height: 80%;
-  width: 100%;
-  margin-top: 60px;
-  background-color: white;
+.imag > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+
 }
+
 .txt {
   flex: 50%;
   font-family: Montserrat;
-  color: black;
-  padding-left: 30px;
-  padding-top: 80px;
+  color: white;
+  margin: 10vh 10vh 10vh 30vh;
 }
 .txt > h1 {
   text-align: left;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-family: 'Ubuntu', sans-serif;
 }
 .txt > a {
@@ -430,7 +430,7 @@ ul.ptray li .ptitle {
 }
 .divider-head {
   flex: 40%;
-  margin-bottom: 10vh;
+  margin-bottom: 0vh;
   margin-top: 10vh;
   margin-left: 10vh;
   font-size:3.5vw;
@@ -442,7 +442,7 @@ ul.ptray li .ptitle {
 }
 .divider-text {
   flex: 60%;
-  margin: 5vh 15vh 5vh 0;
+  margin: 5vh 15vh 0vh 0;
   text-align: justify;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.5);
