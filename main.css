@@ -120,11 +120,69 @@ body {
   background: #cb2027;
   color: white;
 }
+.arow {
+  width: 100vw;
+  height: 20vh;
+  bottom: 0;
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  position: absolute;
+}
+.arow:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+}
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #2994D1;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
 .main {
   background: white;
   height: 100vh;
   flex-direction: column;
-  background-image: url("pencil.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pencil.jpg");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
@@ -183,7 +241,7 @@ body {
 }
 
 .skills {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("skill7.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("book.jpg");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
@@ -289,7 +347,7 @@ ul.rb li .timestamp {
 .skillbarfull {
   width: 65%;
   height: :50px;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.25);
   margin-left: 50px;
   border-radius: 30px;
   justify-content: left;
@@ -300,19 +358,20 @@ ul.rb li .timestamp {
   padding-right: 10px;
   float: left;
   color: white;
-  background-color: blue;
+  background: white;
   border-radius: 30px;
 }
 .skilltxt {
   width: 20%;
   color: white;
+  font-weight: bolder;
   text-align: right;
 }
 
 .project {
   width: 100vw;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("skill8.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("skill8.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
