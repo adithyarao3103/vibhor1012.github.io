@@ -19,7 +19,7 @@
   background: white;
 }
 body {
-	background-color: #041035;
+	background-color: white;
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -64,7 +64,12 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("skill10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-image {
@@ -152,7 +157,7 @@ body {
 .txt {
   flex: 50%;
   font-family: Montserrat;
-  color: black;
+  color: white;
   padding-left: 30px;
   padding-top: 80px;
 }
@@ -163,7 +168,7 @@ body {
 }
 .txt > a {
   padding: 12px 25px 12px 25px;
-  border: 2px solid black;
+  border: 0px solid black;
   text-decoration: none;
   background-color: whitesmoke;
   border-radius: 5px;
@@ -172,7 +177,7 @@ body {
 }
 .txt > a:hover {
   background-color: black;
-  border: 2px solid black;
+  border: 0px solid black;
   color: whitesmoke;
 }
 .imag img {
@@ -435,6 +440,7 @@ ul.ptray li .ptitle {
   font-weight: bolder;
   letter-spacing: 2;
   color: black;
+  border-right: 1px solid black;
 }
 .divider-text {
   flex: 60%;
@@ -442,4 +448,5 @@ ul.ptray li .ptitle {
   text-align: justify;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.5);
+  padding-left: 40px;
 }
