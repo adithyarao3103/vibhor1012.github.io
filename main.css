@@ -514,3 +514,15 @@ ul.ptray li .ptitle {
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.5);
 }
+.socialtray {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.socialicon {
+  width: 20%;
+  aspect-ratio: 1;
+}
