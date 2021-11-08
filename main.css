@@ -132,7 +132,6 @@ body {
    grid-template-columns: 0.48fr 0.001fr 0.48fr;
     width: 700px;
     min-height: 100vh;
-    background-color: white;
     padding-bottom: 50px;
 }
 .clmn {
@@ -417,4 +416,30 @@ ul.ptray li .ptitle {
 }
 .contactdet > p {
   padding-left: 20%;
+}
+
+.divider {
+  width: 100vw;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.divider-head {
+  flex: 40%;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  font-size:3.5vw;
+  font-family: Lato;
+  font-weight: bolder;
+  letter-spacing: 2;
+  color: black;
+}
+.divider-text {
+  flex: 60%;
+  margin: 5vh 15vh 5vh 0;
+  text-align: justify;
+  font-family: Montserrat;
+  color: rgba(0, 0, 0, 0.5);
 }
