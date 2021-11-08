@@ -18,6 +18,9 @@
   background: #555;
   background: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
 	background-color: white;
 	background-position: center;
@@ -27,6 +30,7 @@ body {
     overflow-y: overlay;
   	margin: 0;
   	padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -259,6 +263,7 @@ stroke-width:2px;
   font-family: Lato;
   letter-spacing: 2;
   margin-bottom: 0px;
+  margin-top: 0vh;
   padding-top: 5vh;
   color: white;
 }
@@ -387,6 +392,7 @@ ul.rb li .timestamp {
   letter-spacing: 2;
   color: white;
   padding-top: 5vh;
+  margin-top: 0vh;
   text-align: center;
 }
 .projectbox {
@@ -487,13 +493,13 @@ ul.ptray li .ptitle {
   background: white;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .divider-head {
   flex: 40%;
-  margin-bottom: 0vh;
-  margin-top: 10vh;
-  margin-left: 10vh;
+  margin: 5vh 10vh 5vh 10vh;
   font-size:3.5vw;
   font-family: Lato;
   font-weight: bolder;
@@ -503,9 +509,8 @@ ul.ptray li .ptitle {
 }
 .divider-text {
   flex: 60%;
-  margin: 5vh 15vh 0vh 0;
+  margin: 5vh 10vh 5vh 10vh;
   text-align: justify;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.5);
-  padding-left: 40px;
 }
