@@ -125,11 +125,8 @@ body {
   height: 20vh;
   bottom: 0;
   content: "";
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   position: absolute;
-}
-.arow:hover {
-  background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
 }
 .arrows {
   width: 60px;
@@ -145,7 +142,13 @@ body {
   fill: transparent;
   stroke-width: 1px;  
   animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+  -webkit-animation: arrow 2s infinite;
+  transition: all 0.5s; 
+}
+
+.arow:hover path{
+stroke: white;
+stroke-width:2px;
 }
 
 @keyframes arrow
