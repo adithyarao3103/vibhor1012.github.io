@@ -522,6 +522,12 @@ ul.ptray li .ptitle {
   align-items: center;
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .contactdet {
+    background-color: lightblue;
+  }
+}
+
 .contactdet-title {
   text-align: center;
   font-size: 2em;
@@ -560,3 +566,4 @@ ul.ptray li .ptitle {
 .submit:hover {
   background-color: #007bb5;
 }
+
