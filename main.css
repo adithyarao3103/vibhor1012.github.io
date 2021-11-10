@@ -345,6 +345,12 @@ ul.rb li .timestamp {
   font-family: Montserrat;
   background: transparent;
   color: black;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .skillbox {
+    padding: 25px;
+  }
 }
 .skilltray {
   padding:  3% 0%;
@@ -514,11 +520,13 @@ ul.ptray li .ptitle {
   }
   .divider-head {
     flex: 100%;
+    font-size:5.5vw;
     border: 0px;
-    letter-spacing: 2;
+    margin: 5% 0%;
   }
   .divider-text {
     flex: 100%;
+    margin: 0% 2%;
   }
 }
 .socialtray {
