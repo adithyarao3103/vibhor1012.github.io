@@ -347,14 +347,20 @@ ul.rb li .timestamp {
   color: black;
 }
 .skilltray {
-  padding:  3%;
+  padding:  3% 0%;
+  background:transparent;
   display: flex;
   flex-direction: row;
-  color: whitesmoke;
-  background:transparent;
-
+}
+.skilltxt {
+  width: 20%;
+  flex: 20%;
+  color: white;
+  font-weight: bolder;
+  text-align: right;
 }
 .skillbarfull {
+  flex: 80%;
   width: 80%;
   height: :50px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -365,17 +371,12 @@ ul.rb li .timestamp {
 
 .skillbar {
   text-align: right;
-  padding-right: 10px;
   float: left;
   color: white;
   background: white;
   border-radius: 30px;
-}
-.skilltxt {
-  width: 20%;
-  color: white;
-  font-weight: bolder;
-  text-align: right;
+  height: 100%;
+  content: "";
 }
 @media screen and (max-width: 600px) {
   .skillinfo {
