@@ -190,7 +190,7 @@ body {
     display: none;
   }
   .about {
-    margin: 10% 0%;
+    margin: 0% 0%;
   }
   .info {
     flex-direction: column;
@@ -205,6 +205,7 @@ body {
   }
   .txt > h1 {
     text-align: center;
+    font-size: 25px;
   }
 }
 
@@ -398,7 +399,6 @@ ul.rb li .timestamp {
 .projectbox ul.ptray li {
   list-style: none;
   margin: auto;
-  margin-left: 4em;
   border-left: 1px solid #fff;
   padding: 0 0 50px 30px;
   position: relative;
