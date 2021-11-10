@@ -18,9 +18,7 @@
   background: #555;
   background: white;
 }
-* {
-  border: 1px solid black;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -94,7 +92,16 @@ body {
   font-family: Lato;
   letter-spacing: 2;
 }
-
+@media screen and (max-width: 600px) {
+  .hero-text {
+    width: 80%;
+    font-size: 15px;
+  }
+  .hero-text > h1 {
+    font-size: 10vw;
+    margin: 0;
+  }
+}
 .fa {
   padding: 12px;
   font-size: 30px;
@@ -105,6 +112,7 @@ body {
   margin: 5px 4px;
   border-radius: 50%;
 }
+
 
 .fa:hover {
     opacity: 0.7;
@@ -201,6 +209,7 @@ body {
   .txt {
     flex: 100%;
     margin: 5%;
+    font-size: 15px;
     text-align: justify;
   }
   .txt > h1 {
@@ -231,6 +240,11 @@ body {
   padding-top: 5%;
   margin-top: 0vh;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .skills > h1 {
+    font-size: 6.5vw;
+  }
 }
 .skillinfo {
   display: flex;
@@ -269,7 +283,14 @@ align-items: center;
   padding: 0 0 25px 30px;
   position: relative;
 }
-
+@media screen and (max-width: 600px) {
+  .rb-container {
+    margin: 5% 5%;
+  }
+  .rb-container ul.rb li {
+    padding: 0 0 25px 30px;
+  }
+}
 .rb-container ul.rb li:last-child {
   border-left: 0;
   padding-bottom: 0px;
@@ -296,6 +317,14 @@ ul.rb li .timestamp {
 .item-title {
   color: white;
 }
+@media screen and (max-width: 600px) {
+  ul.rb li .timestamp {
+    font-size: 15px;
+  }
+  .item-title {
+    font-size: 15px;
+  }
+}
 
 .skillbox {
   flex: 50%;
@@ -309,7 +338,7 @@ ul.rb li .timestamp {
 }
 @media screen and (max-width: 600px) {
   .skillbox {
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
   }
 }
 .skilltray {
@@ -484,7 +513,7 @@ ul.ptray li .ptitle {
   }
   .divider-text {
     flex: 100%;
-    margin: 0% 2%;
+    margin: 0% 8% 8% 8%;
   }
 }
 .socialtray {
