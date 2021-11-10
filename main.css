@@ -127,103 +127,41 @@ body {
   background: #cb2027;
   color: white;
 }
-.arow {
-  width: 100vw;
-  height: 20vh;
-  bottom: 0;
-  content: "";
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-  position: absolute;
-}
-.arrows {
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
-}
-
-.arrows path {
-  stroke: #2994D1;
-  fill: transparent;
-  stroke-width: 1px;  
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
-  transition: all 0.5s; 
-}
-
-.arow:hover path{
-stroke: white;
-stroke-width:2px;
-}
-
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-.arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
-}
-
-.arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
-}
-
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
-}
-.main {
+.about {
   background: white;
-  height: 100vh;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pencil.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .info {
   display: flex;
   flex-direction: row;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
+  width: 80%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 .imag {
   flex: 50%;
   width: 100%;
 }
 .imag > img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -50%);
-
+  aspect-ratio: 1;
+  width: 90%;
+  border-radius: 50%;
 }
-
 .txt {
   flex: 50%;
+  margin: 5% 5% 5% 15%;
   font-family: Montserrat;
   color: white;
-  margin: 10vh 10vh 10vh 30vh;
 }
 .txt > h1 {
   text-align: left;
@@ -244,10 +182,19 @@ stroke-width:2px;
   border: 0px solid black;
   color: whitesmoke;
 }
-.imag img {
-  aspect-ratio: 1;
-  width: 90%;
-  border-radius: 50%;
+@media screen and (max-width: 600px) {
+  .about {
+    margin: 10% 0%;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .imag {
+    flex: 100%;
+  }
+  .txt {
+    flex: 100%;
+  }
 }
 
 .skills {
@@ -266,11 +213,12 @@ stroke-width:2px;
 .skills > h1 {
   font-size:4.5vw;
   font-family: Lato;
+  font-weight: bolder;
   letter-spacing: 2;
-  margin-bottom: 0px;
-  margin-top: 0vh;
-  padding-top: 5vh;
   color: white;
+  padding-top: 5%;
+  margin-top: 0vh;
+  text-align: center;
 }
 .skillinfo {
   display: flex;
@@ -363,7 +311,7 @@ ul.rb li .timestamp {
   flex: 20%;
   color: white;
   font-weight: bolder;
-  text-align: right;
+  text-align: left;
 }
 .skillbarfull {
   flex: 80%;
@@ -472,7 +420,7 @@ ul.ptray li .ptitle {
 }
 @media screen and (max-width: 600px) {
   ul.ptray li .ptitle {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 .project-data {
@@ -483,7 +431,7 @@ ul.ptray li .ptitle {
 }
 @media screen and (max-width: 600px) {
   .project-data {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
