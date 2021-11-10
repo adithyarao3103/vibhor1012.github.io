@@ -18,6 +18,9 @@
   background: #555;
   background: white;
 }
+* {
+  border: 1px solid black;
+}
 html {
   scroll-behavior: smooth;
 }
