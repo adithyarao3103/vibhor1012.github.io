@@ -178,6 +178,7 @@ body {
   margin: 5% 5% 5% 15%;
   font-family: Montserrat;
   color: white;
+  text-align: justify;
 }
 .txt > h1 {
   text-align: left;
