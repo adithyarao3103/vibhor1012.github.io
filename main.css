@@ -251,12 +251,14 @@ stroke-width:2px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bookn.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
 }
 .skills > h1 {
   font-size:4.5vw;
@@ -268,35 +270,38 @@ stroke-width:2px;
   color: white;
 }
 .skillinfo {
-   display: grid;
-   grid-template-columns: 0.4995fr 0.001fr 0.4995fr;
-    width: 75vw;
-    height: 70vh;
-    background: transparent;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  background: transparent;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 .skillimag {
-display: flex;
+flex: 50%;
+justify-content: space-around;
+align-content: center;
+align-items: center;
 }
 
 .rb-container {
   font-family: "PT Sans", sans-serif;
-  position: relative;
-  height: 63vh;
-  width: 37.4625vw;
   background: transparent;
+  margin: 5% 15%;
   text-align: left;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 .rb-container ul.rb {
-  margin: 2.5em 0em;
   padding: 0;
   display: inline-block;
 }
 
 .rb-container ul.rb li {
   list-style: none;
-  margin: auto;
-  margin-left: 6em;
   border-left: 1px dashed white;
   padding: 0 0 25px 30px;
   position: relative;
@@ -329,23 +334,17 @@ ul.rb li .timestamp {
   color: white;
 }
 
-
-.skillclmn {
-  margin-top: 0vh;
-  margin-bottom: 7vh;
-  background: white;
-}
-
 .skillbox {
-  margin: 0px;
-  align-content: space-between;
+  flex: 50%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
   font-family: Montserrat;
   background: transparent;
   color: black;
-  height: 63vh;
 }
 .skilltray {
-  padding:  15px;
+  padding:  3%;
   display: flex;
   flex-direction: row;
   color: whitesmoke;
@@ -353,10 +352,10 @@ ul.rb li .timestamp {
 
 }
 .skillbarfull {
-  width: 65%;
+  width: 80%;
   height: :50px;
   background-color: rgba(255, 255, 255, 0.25);
-  margin-left: 50px;
+  margin-left: 10%;
   border-radius: 30px;
   justify-content: left;
 }
@@ -375,10 +374,20 @@ ul.rb li .timestamp {
   font-weight: bolder;
   text-align: right;
 }
-
+@media screen and (max-width: 600px) {
+  .skillinfo {
+    flex-direction: column;
+  }
+  .skillimag {
+    flex: 100%;
+  }
+  .skillbox {
+    flex: 100%;
+  }
+}
 .project {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("skill8.jpg");
   background-position: center;
   background-attachment: fixed;
@@ -391,16 +400,26 @@ ul.rb li .timestamp {
   font-weight: bolder;
   letter-spacing: 2;
   color: white;
-  padding-top: 5vh;
+  padding-top: 5%;
   margin-top: 0vh;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .project > h1 {
+    font-size: 8.5vw;
+  }
+}
 .projectbox {
   margin: auto;
-  width: 70vw;
+  width: 70%;
   text-align: left;
   padding-right: 4em;
   border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .projectbox {
+    width: 85%;
+  }
 }
 .projectbox ul.ptray {
   margin: 2.5em 0em;
@@ -441,26 +460,25 @@ ul.ptray li .ptitle {
   font-size: 20px;
   font-weight: bold;
 }
-
+@media screen and (max-width: 600px) {
+  ul.ptray li .ptitle {
+    font-size: 15px;
+  }
+}
 .project-data {
   color: rgba(255, 255, 255, 0.75);
   text-align: justify;
   font-family: Lato;
   border-top: 1px solid white;
 }
-.project-data > a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
-}
-.project-data>a:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid white;
+@media screen and (max-width: 600px) {
+  .project-data {
+    font-size: 10px;
+  }
 }
 
 .divider {
-  width: 100vw;
+  width: 100%;
   background: white;
   display: flex;
   flex-direction: row;
@@ -468,13 +486,13 @@ ul.ptray li .ptitle {
   align-content: center;
   align-items: center;
 }
+
 .divider-head {
   flex: 40%;
   margin: 5vh 10vh 5vh 10vh;
   font-size:3.5vw;
   font-family: Lato;
   font-weight: bolder;
-  letter-spacing: 2;
   color: black;
   border-right: 1px solid black;
 }
@@ -482,8 +500,22 @@ ul.ptray li .ptitle {
   flex: 60%;
   margin: 5vh 10vh 5vh 10vh;
   text-align: justify;
+  font-size: max(10px,1.15vw);
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 600px) {
+  .divider {
+    flex-direction: column;
+  }
+  .divider-head {
+    flex: 100%;
+    border: 0px;
+    letter-spacing: 2;
+  }
+  .divider-text {
+    flex: 100%;
+  }
 }
 .socialtray {
   display: flex;
@@ -524,7 +556,9 @@ ul.ptray li .ptitle {
 }
 @media screen and (max-width: 600px) {
   .contactdet {
-    background-color: lightblue;
+    width: 80%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
   }
 }
 
